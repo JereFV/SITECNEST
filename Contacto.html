@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Etiquetas Básicas -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>TechNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="images/Logo TechNest con fondo.jpg" type="">
+
+  <!-- Referencia Boostrap css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!--Estilos css importados-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Estilo responsivo -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Hoja de estilos personalizada -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  
+  <div class="hero_area"> 
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a href="index.html">
+            <img src="images/Logo_TechNest.png" alt="Logo">             
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar_Opciones collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Acerca_de.html">Acerca De</a>
+              </li>
+            </ul>            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section --> 
+  </div>
+
+  <!-- book section -->
+  <section class="contacto_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Formulario de Contacto</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form id="formularioContacto" onsubmit="return validateForm()">
+              <div>
+                <input required type="text" class="form-control" placeholder="Nombre Completo" size=""/>
+              </div>
+              <div>
+                <input required minlength="8"  type="number" class="form-control" placeholder="Número de Teléfono (sin guiones)" />
+              </div>
+              <div>
+                <input required type="email" class="form-control" placeholder="Correo eléctronico" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Motivo del contacto
+                  </option>
+                  <option value="">Problema con una entrega</option>
+                  <option value="">Problema con algún producto</option>
+                  <option value="">Asistencia para configuración de algún componente</option>
+                  <option value="">Otro</option>
+                </select>
+              </div>
+              <div>
+                <textarea required class="form-control" placeholder="Información detallada del problema" id="detalle"></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="informacion-contacto">
+            <p><span class="fa fa-envelope">&nbsp;</span>technestcr@gmail.com</p>
+            <p><span class="fa fa-phone">&nbsp;</span>4008-0840</p>
+            <p><span class="fa fa-map-marker">&nbsp;</span>San Rafael de Alajuela</p>
+          </div>  
+          
+          <div class="map_container ">
+            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7690760980126!2d-84.21477862919852!3d9.972329354009057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f911b973e63f%3A0x62cecd75b3980d36!2sPlaza%20Deportes%20San%20Rafael%2C%20Provincia%20de%20Alajuela%2C%20San%20Rafael!5e0!3m2!1ses-419!2scr!4v1729403356124!5m2!1ses-419!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end book section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <img src="images/Logo_TechNest.png" alt="Logo" style="height: 90px; width: 115px;">            
+            <div class="footer_social">
+              <a href="https://www.facebook.com/people/TechNest/61567173700777/?rdid=zBX2OzdjxNZV3uxG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fog4yccQJfjgdNnKP%2F" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://x.com/technestcr" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>             
+              <a href="https://www.instagram.com/tech.nestcr/?hl=es" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contactanos
+            </h4>
+            <div class="contact_link_box">
+              <a>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  San Rafael de Alajuela
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  4008-0840
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  technestcr@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Horarios
+            </h4>
+            <p>Lunes a Viernes de 9:00 a.m. a 7:00 p.m.</p>
+            <p>Sábados de 9:00 a.m a 6:00 p.m.</p>
+            <p>Domingos de 10:00 a.m a 5:00 p.m.</p>
+         </div>  
+        </div>      
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span> TechNest. Todos los Derechos Reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+
+</body>
+
+
+</html>
