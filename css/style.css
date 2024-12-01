@@ -6,6 +6,9 @@ header nav img{
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .layout_padding {
@@ -902,6 +905,10 @@ nav .cart svg:hover{
   flex: 1;
 }
 
+.cart_product-details button{
+  margin-top: 10px;
+}
+
 .cart_product-name{
   font-size: 26px;
   font-weight: bold;
@@ -920,10 +927,19 @@ nav .cart svg:hover{
   columns: #333;
 }
 
-.cart_product-quantity{
-  margin-left: 20px;
-  font-size: 14px;
-  color: #777;
+.cart_product-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart_product-quantity label {
+  margin: 0;
+}
+
+.cart_product-quantity .form-control {
+  width: 60px;
+  margin: 10px 0;
 }
 
 /*Parte de la derecha*/

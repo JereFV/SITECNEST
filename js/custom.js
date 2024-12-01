@@ -4,6 +4,7 @@ $(window).on('load', function () {
 
 // nice select
 $(document).ready(function() {
+    obtenerDatosCarritoNav();
     $('select').niceSelect();
 });
 
@@ -66,4 +67,26 @@ function validateForm() {
         return true; // Permite el envío del formulario
     }
     return false; // Impide el envío del formulario
+}
+
+//Calcula la cantidad de productos y el monto total a mostrar en el carrito del nav a partir de la variable localStorage.
+function obtenerDatosCarritoNav(){
+    // Carrito de compras almacenado en localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if(cart != []){
+        let cantidadProductos = 0;
+        let totalCarrito = 0;
+
+        cart.forEach(item => {
+            cantidadProductos += Number(item.cantidad);
+            if(Number(item.cantidad) > 1)
+                totalCarrito += Number(item.precio.replace(/,/g, '')) * item.cantidad;
+            else
+                totalCarrito += Number(item.precio.replace(/,/g, ''));
+        });
+
+        $("#contadorCarritoNav").text(cantidadProductos);
+        $("#totalCarritoNav").text(`₡${totalCarrito.toLocaleString('en-US')}`);
+    }
 }

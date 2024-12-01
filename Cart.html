@@ -73,8 +73,8 @@
                                 </svg>
                             </a>
 
-                            <span class="num-elementos">0</span>
-                            <h6>₡0</h6>
+                            <span class="num-elementos" id="contadorCarritoNav">0</span>
+                            <h6 id="totalCarritoNav">₡0</h6>
                         </div>
                     </div>
                 </nav>
@@ -84,54 +84,30 @@
     <section>
         <div class="cart_container">
             <!--Lista de los productos-->
-            <div class="cart_product-list">
-                <div class="cart_product-item">
-                    <img src="/images/amd-ryzen-5-5500.jpg" alt="Imagen del procesador" class="cart_product-img">
-                    <div class="cart_product-details">
-                        <div class="cart_product-name">Procesador AMD Ryzen 5 5500</div>
-                        <div class="cart_product-description">Descripcion</div>
-                    </div>
-                    <div>
-                        <div class="cart_product-price">Precio: ₡46,000</div>
-                        <div>Cantidad: 1</div>
-                    </div>
-                </div>
-
-                <div class="cart_product-item">
-                    <img src="/images/acer-vero-v7-v227q-22-.jpg" alt="Imagen del monitor" class="cart_product-img">
-                    <div class="cart_product-details">
-                        <div class="cart_product-name">Acer Vero V7 V227Q - 22</div>
-                        <div class="cart_product-description">Descripcion</div>
-                    </div>
-                    <div>
-                        <div class="cart_product-price">Precio: ₡50,900</div>
-                        <div>Cantidad: 1</div>
-                    </div>
-                </div>
+            <div class="cart_product-list">               
             </div>
-
 
             <!--Detalle de la compra-->
             <div class="cart_order-summary">
                 <div class="cart_summary-title">Resumen del Pedido</div>
                 <div class="cart_summary-item">
                     <span>Subtotal</span>
-                    <Strong>₡96,900</Strong>
+                    <strong id="subtotalFactura">₡0</strong>
                 </div>
                 <div class="cart_summary-item">
                     <span>Envio</span>
-                    <Strong>Gratis</Strong>
+                    <strong>₡0 (Gratuito)</strong>
                 </div>
                 <div class="cart_summary-item">
                     <span>Impuestos</span>
-                    <strong>₡6,783</strong>
+                    <strong id="impuestosFactura">₡0</strong>
                 </div>
                 <div class="cart_total-price">
                     <Span>Total</Span>
-                    <Strong>103,683</Strong>
+                    <strong id="totalFactura">₡0</strong>
                 </div>
                 <div>
-                    <button class="cart_pay-button">Pagar</button>
+                    <button id="Pagar" type="button" class="cart_pay-button btn btn-secondary" disabled onclick="pagar()">Pagar</button>
                 </div>
             </div>
         </div>
@@ -215,7 +191,7 @@
     </footer>
     <!-- footer section -->
 
-    <!-- jQery -->
+    <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.js"></script>
@@ -225,8 +201,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- nice select -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
