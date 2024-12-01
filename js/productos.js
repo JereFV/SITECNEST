@@ -11,8 +11,10 @@ $(document).ready(function() {
       const container = $('#contenedor_productos');
       
       data.forEach(producto => {
-        const card = 
-        `<div class="col-sm-6 col-lg-4 all ${producto.categoria}">         
+      //const card = document.createElement('div');
+      // card.classList.add('card', producto.codigo);
+      const card =
+        `<a href="UProducto.html"><div class="col-sm-6 col-lg-4 all ${producto.categoria}" id='productoCargado${producto.codigo}'>         
             <div class="card" style="width: 20rem;">
               <div class="image-container">
                 <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
@@ -20,13 +22,24 @@ $(document).ready(function() {
               </div>       
               <h4>${producto.nombre}</h4>
               <div class="botones-section">
-                <a href="#" class="btn btn-primary" onclick="addToCart(${producto.codigo})"><span class="fa fa-shopping-cart">&nbsp;</span>Añadir al carrito</a>
+                <a href="#" class="btn btn-primary annadirCarrito" onclick="addToCart(${producto.codigo})"><span class="fa fa-shopping-cart">&nbsp;</span>Añadir al carrito</a>
               </div>                                        
             </div>
-          </div>`;
-        
-        container.append(card);
+          </div></a>`;
+
+      container.append(card);
+
+      const divProducto = $('#productoCargado' + producto.codigo);
+      divProducto.on('click', function (event) {
+        event.preventDefault(); // Evitar redirección
+        console.log(this.id.substring(15));
+        localStorage.setItem("codigo", this.id.substring(15));
+        // Opcionalmente, redirigir manualmente si lo necesitas
+        console.log(this.id.substring(15))
+        window.location.href = "UProducto.html";
+
       });
+    });
 
       //Se asegura que las imagenes de los productos estén cargadas previo a la configuración del filtrado.
       container.imagesLoaded(function () {
