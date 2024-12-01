@@ -5,7 +5,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 $(document).ready(function() {
     // Cargar y mostrar productos dinámicamente desde el archivo JSON
-    $.getJSON('productos.json', function(data) {
+    $.getJSON('Json/productos.json', function(data) {
       //Almacenado del json en una variable
       productos = data;
       const container = $('#contenedor_productos');
