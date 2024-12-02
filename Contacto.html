@@ -13,29 +13,36 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!--Estilos css importados-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Hoja de estilos personalizada -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- Estilo responsivo -->
-  <link href="css/responsive.css" rel="stylesheet" /> 
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <body class="sub_page">
-  
-  <div class="hero_area"> 
+
+  <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section"  >
+    <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container" >
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a href="index.html">
-            <img src="images/Logo_TechNest.png" alt="Logo">             
+            <img src="images/Logo_TechNest.png" alt="Logo">
           </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class=""></span>
           </button>
 
@@ -55,24 +62,25 @@
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="Contacto.html">Contacto</a>
-              </li>             
+              </li>
             </ul>
-            
+
             <div class="cart">
               <a href="Cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                  <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                 </svg>
               </a>
-  
+
               <span class="num-elementos" id="contadorCarritoNav">0</span>
-              <h6 id="totalCarritoNav">₡0</h6>          
+              <h6 id="totalCarritoNav">₡0</h6>
             </div>
-          </div>                
+          </div>
         </nav>
       </div>
     </header>
-    <!-- end header section --> 
+    <!-- end header section -->
   </div>
 
   <!-- book section -->
@@ -86,32 +94,62 @@
           <div class="form_container">
             <form id="formularioContacto" onsubmit="return validateForm()">
               <div>
-                <input required type="text" class="form-control" placeholder="Nombre Completo" size=""/>
+                <input required type="text" class="form-control" placeholder="Nombre Completo" size="" name="nombre" />
               </div>
               <div>
-                <input required minlength="8"  type="number" class="form-control" placeholder="Número de Teléfono (sin guiones)" />
+                <input required minlength="8" type="number" class="form-control"
+                  placeholder="Número de Teléfono (sin guiones)" name="telefono" />
               </div>
               <div>
-                <input required type="email" class="form-control" placeholder="Correo eléctronico" />
+                <input required type="email" class="form-control" placeholder="Correo eléctronico" name="email" />
               </div>
               <div>
-                <select class="form-control nice-select wide">
+                <select class="form-control nice-select wide" name="motivoContacto">
                   <option value="" disabled selected>
                     Motivo del contacto
                   </option>
-                  <option value="">Problema con una entrega</option>
-                  <option value="">Problema con algún producto</option>
-                  <option value="">Asistencia para configuración de algún componente</option>
-                  <option value="">Otro</option>
+                  <option value="Problema de entrega">Problema con una entrega</option>
+                  <option value="Problema de producto">Problema con algún producto</option>
+                  <option value="Asistencia de configuracion">Asistencia para configuración de algún componente</option>
+                  <option value="Otro">Otro</option>
                 </select>
               </div>
               <div>
-                <textarea required class="form-control" placeholder="Información detallada del problema" id="detalle"></textarea>
+                <select class="form-control nice-select wide" name="sexo">
+                  <option value="" disabled selected>
+                    Sexo
+                  </option>
+                  <option value="Hombre">Hombre</option>
+                  <option value="Mujer">Mujer</option>
+                  <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div>
+                <select class="form-control nice-select wide" name="preferenciaContacto">
+                  <option value="" disabled selected>
+                    Preferencia de Contacto
+                  </option>
+                  <option value="Correo">Correo</option>
+                  <option value="Mensaje">Mensaje</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Llamada">Llamada</option>
+                </select>
+              </div>
+              <div>
+                <textarea required class="form-control" placeholder="Información detallada del problema"
+                  name="informacionProblema"></textarea>
               </div>
               <div class="btn_box">
-                <button type="submit">Enviar</button>
+                <input type="submit" id="button" value="ENVIAR">
               </div>
             </form>
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+              emailjs.init('yU4Q-ojYeXLve04ZE')
+            </script>
           </div>
         </div>
 
@@ -120,10 +158,12 @@
             <p><span class="fa fa-envelope">&nbsp;</span>technestcr@gmail.com</p>
             <p><span class="fa fa-phone">&nbsp;</span>4008-0840</p>
             <p><span class="fa fa-map-marker">&nbsp;</span>San Rafael de Alajuela</p>
-          </div>  
-          
+          </div>
+
           <div class="map_container ">
-            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7690760980126!2d-84.21477862919852!3d9.972329354009057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f911b973e63f%3A0x62cecd75b3980d36!2sPlaza%20Deportes%20San%20Rafael%2C%20Provincia%20de%20Alajuela%2C%20San%20Rafael!5e0!3m2!1ses-419!2scr!4v1729403356124!5m2!1ses-419!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.7690760980126!2d-84.21477862919852!3d9.972329354009057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f911b973e63f%3A0x62cecd75b3980d36!2sPlaza%20Deportes%20San%20Rafael%2C%20Provincia%20de%20Alajuela%2C%20San%20Rafael!5e0!3m2!1ses-419!2scr!4v1729403356124!5m2!1ses-419!2scr"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -137,20 +177,21 @@
       <div class="row">
         <div class="col-md-2 col-sm-2 footer-col">
           <div class="footer_detail">
-            <img src="images/Logo_TechNest.png" alt="Logo" style="height: 90px; width: 115px;">            
+            <img src="images/Logo_TechNest.png" alt="Logo" style="height: 90px; width: 115px;">
             <div class="footer_social">
-              <a href="https://www.facebook.com/people/TechNest/61567173700777/?rdid=zBX2OzdjxNZV3uxG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fog4yccQJfjgdNnKP%2F" target="_blank">
+              <a href="https://www.facebook.com/people/TechNest/61567173700777/?rdid=zBX2OzdjxNZV3uxG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fog4yccQJfjgdNnKP%2F"
+                target="_blank">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
               <a href="https://x.com/technestcr" target="_blank">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>             
+              </a>
               <a href="https://www.instagram.com/tech.nestcr/?hl=es" target="_blank">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
               <a>
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
-              </a>              
+              </a>
             </div>
           </div>
         </div>
@@ -174,7 +215,7 @@
               </a>
             </div>
           </div>
-         
+
         </div>
 
         <div class="col-md-4 col-sm-4 footer-col">
@@ -184,18 +225,22 @@
             <p>Lunes a Viernes de 9:00 a.m. a 7:00 p.m.</p>
             <p>Sábados de 9:00 a.m a 6:00 p.m.</p>
             <p>Domingos de 10:00 a.m a 5:00 p.m.</p>
-         </div>  
+          </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-3 footer-col">
           <div class="footer_links">
             <h4>Enlaces de interés</h4>
 
-            <a href="Ayuda.html"><p>Preguntas Frecuentes</p></a>
-            <a href="Acerca_de.html"><p>Acerca De</p></a>           
-         </div>  
+            <a href="Ayuda.html">
+              <p>Preguntas Frecuentes</p>
+            </a>
+            <a href="Acerca_de.html">
+              <p>Acerca De</p>
+            </a>
+          </div>
         </div>
-        
+
       </div>
       <div class="footer-info">
         <p>&copy; <span id="displayYear"></span> TechNest. Todos los Derechos Reservados.</p>
@@ -207,8 +252,9 @@
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <!-- isotope js -->
@@ -220,9 +266,31 @@
   <!-- custom js -->
   <script src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
 
 </body>
+<script>
+  const btn = document.getElementById('button');
 
+  document.getElementById('formularioContacto')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      btn.value = 'Enviando...';
+
+      const serviceID = 'default_service';
+      const templateID = 'template_lw8qgmb';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'ENVIAR';
+          alert('Enviado');
+        }, (err) => {
+          btn.value = 'ENVIAR';
+          alert(JSON.stringify(err));
+        });
+    });
+</script>
 
 </html>
