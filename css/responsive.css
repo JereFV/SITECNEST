@@ -127,9 +127,7 @@
   .blog_section{
     margin-right: 20px;
   }
-}
 
-@media (max-width: 767px) {
   .ayuda_section{
     margin-right: 10px;
   }
@@ -140,3 +138,176 @@
     padding: 0 2em 0 0;   
   }
 }
+
+/* Ajustes generales para tamaños pequeños */
+@media (max-width: 992px) {
+  .cart_container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .cart_product-list,
+  .cart_order-summary {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cart_product-img {
+    margin-right: 15px;
+  }
+
+  .cart_product-name {
+    font-size: 22px;
+  }
+
+  .cart_product-description {
+    font-size: 14px;
+  }
+
+  .cart_product-price {
+    font-size: 14px;
+  }
+
+  .cart_product-quantity .form-control {
+    width: 50px;
+  }
+
+  .cart_total-price {
+    font-size: 16px;
+  }
+
+  .cart_pay-button {
+    font-size: 14px; 
+    padding: 8px;
+  }
+
+  .footer_section .container {
+    padding: 0 20px; /* Aumentar el padding en dispositivos medianos */
+  }
+
+  .footer_section .row {
+    flex-direction: column; /* Apilar columnas verticalmente */
+    align-items: center;    /* Centrar contenido */
+  }
+
+  .footer_section .footer-col {
+    text-align: center; /* Centrar cada columna */
+    width: 100%;        /* Expandir al 100% del contenedor */
+  }
+
+  .footer_section .footer_social {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+/* Ajustes generales para dispositivos extra pequeños */
+@media (max-width: 576px) {
+  .cart_container {
+    flex-direction: column; /* Cambiar a diseño vertical */
+    gap: 20px; /* Espaciado entre las secciones */
+    padding: 10px; /* Reducir padding general */
+  }
+
+  .cart_product-list, 
+  .cart_order-summary {
+    width: 100%; /* Ocupar el ancho completo */
+    margin-bottom: 20px; /* Espaciado inferior entre las secciones */
+  }
+
+  .cart_order-summary {
+    padding: 0px 20px;
+  }
+
+  .cart_product-item {
+    flex-direction: column; /* Cambiar disposición a una sola columna */
+    align-items: flex-start; /* Alinear contenido a la izquierda */
+    gap: 10px; /* Espaciado entre los elementos del producto */
+    padding-bottom: 40px; 
+  }
+
+  .cart_product-img {
+    width: 100%; /* Imagen ocupa el ancho completo */
+    max-width: 300px; /* Limitar tamaño máximo */
+    height: auto; /* Mantener proporción */
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
+  }
+
+  .cart_product-details, 
+  .cart_product-price {
+    width: 100%; /* Asegurar que el texto ocupe todo el ancho */
+  }
+
+  .cart_product-name {
+    font-size: 20px; /* Reducir tamaño de texto */
+  }
+
+  .cart_product-price {
+    font-size: 16px; /* Ajustar tamaño */
+  }
+
+  .cart_product-quantity {
+    flex-direction: row; /* Alinear elementos en fila */
+    align-items: center; /* Centrar verticalmente */
+    gap: 10px; /* Espaciado entre label e input */
+  }
+
+  .cart_product-quantity label {
+    margin: 0; /* Eliminar cualquier margen adicional */
+    font-size: 14px; /* Ajustar tamaño del texto si es necesario */
+  }
+
+  .cart_product-quantity .form-control {
+    width: 80px; /* Tamaño fijo más pequeño para que no ocupe demasiado espacio */
+    margin: 0; /* Eliminar márgenes */
+  }
+
+  .cart_summary-title {
+    font-size: 18px; /* Ajustar tamaño de texto */
+  }
+
+  .cart_summary-item {
+    flex-direction: column; /* Apilar elementos */
+    align-items: flex-start; /* Alinear a la izquierda */
+    gap: 5px; /* Espaciado entre los elementos */
+  }
+
+  .cart_total-price {
+    flex-direction: column; /* Cambiar disposición a una columna */
+    align-items: flex-start; /* Alinear a la izquierda */
+    gap: 5px; /* Espaciado entre texto y valor */
+  }
+
+  .cart_pay-button {
+    font-size: 14px; /* Reducir tamaño del botón */
+    padding: 10px; /* Ajustar padding */
+  }
+
+  h1.text-center {
+    font-size: 18px; /* Reducir tamaño del mensaje vacío */
+    text-align: center; /* Centrar texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+  }
+
+  .footer_section h4 {
+    font-size: 16px; /* Reducir tamaño de los encabezados */
+  }
+
+  .footer_section p {
+    font-size: 14px; /* Reducir tamaño del texto */
+    line-height: 1.4; /* Mejorar legibilidad */
+  }
+
+  .footer_section .footer_social a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px; /* Iconos más pequeños */
+  }
+
+  .footer_section .footer-info p {
+    font-size: 12px; /* Reducir texto del copyright */
+  }
+}
+
+

@@ -1,3 +1,7 @@
+let productos = JSON.parse(localStorage.getItem('productos')) || [];
+// Carrito de compras almacenado en localStorage
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 $(window).on('load', function () {
     getYear();        
 });
@@ -89,4 +93,30 @@ function obtenerDatosCarritoNav(){
         $("#contadorCarritoNav").text(cantidadProductos);
         $("#totalCarritoNav").text(`₡${totalCarrito.toLocaleString('en-US')}`);
     }
+}
+
+// Función para agregar productos al carrito
+function addToCart(productId, event) {
+    //Se valida que al añadir un producto desde la pestaña productos no redirrecione al detalle.
+    if(event != null)
+        event.stopPropagation();
+
+    const product = productos.find(p => p.codigo == productId);
+    const cartItem = cart.find(item => item.codigo == productId);
+  
+    if (cartItem) {
+        cartItem.cantidad++;
+    } else {
+        cart.push({ ...product, cantidad: 1});
+    }
+  
+    saveCart();
+    obtenerDatosCarritoNav();
+  
+    Swal.fire('Producto agregado', `${product.nombre} ha sido agregado al carrito correctamente.`, 'success');
+}
+  
+// Función para guardar el carrito en localStorage
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
 }

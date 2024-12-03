@@ -30,7 +30,7 @@ $(document).ready(function () {
                         <p><strong>Stock:</strong> <span id="product-stock">${productoB.stock}</span></p>
                         <p><strong>Opciones de entrega:</strong> <span id="product-delivery">${productoB.opcionEntrega}</span></p>
                         <p><strong>Garantía:</strong> <span id="product-warranty">${productoB.garantia}</span></p>
-                        <button class="product-add-to-cart-button">Agregar al carrito</button>
+                        <button class="product-add-to-cart-button" onclick="addToCart(${productoB.codigo})">Agregar al carrito</button>
                     </div>
                 </div>
             </div>

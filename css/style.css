@@ -928,10 +928,15 @@ nav .cart svg:hover{
   columns: #333;
 }
 
+.cart_product-price:last-child {
+  margin-top: 10px;
+}
+
 .cart_product-quantity {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .cart_product-quantity label {
@@ -981,7 +986,7 @@ nav .cart svg:hover{
 
 .cart_pay-button{
   width: 100%;
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   font-size: 16px;
   padding: 10px;
@@ -991,7 +996,7 @@ nav .cart svg:hover{
 }
 
 .cart_pay-button:hover{
-  background-color: #555;
+  background-color: #0056b3;
 }
   
 /*Productos*/
