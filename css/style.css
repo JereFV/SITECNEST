@@ -1074,8 +1074,14 @@ nav .cart svg:hover{
   padding: 10px;
   border-radius: 8px;
   margin: auto;
-  text-align: center;
 }
+
+.product-user-reviews div{
+  text-align: left;
+  margin-bottom: 36px;
+  margin-left: calc(100%/3);
+}
+
 
 .product-user-reviews h3 {
   color: #1C1C1C;
@@ -1083,16 +1089,19 @@ nav .cart svg:hover{
 
 .product-related-products {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
   margin-top: 20px;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-related-products img {
-  width: 30%;
+  margin-left: calc(100%/5);
+  width: calc(100% - 100px); 
+  border-radius: 8px;
 }
 
 .product-product-col {
