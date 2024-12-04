@@ -62,7 +62,7 @@
   }
 
   .about_section .detail-box,
-  .contacto_section .form_container {
+  .contacto_section .form_container{
     margin-bottom: 45px;
   }
 
@@ -180,7 +180,7 @@
   .cart_pay-button {
     font-size: 14px; 
     padding: 8px;
-  }
+  } 
 
   .footer_section .container {
     padding: 0 20px; /* Aumentar el padding en dispositivos medianos */
@@ -204,6 +204,11 @@
 
 /* Ajustes generales para dispositivos extra pequeños */
 @media (max-width: 576px) {
+  body {
+    display: block;
+    min-height: auto;
+  }
+
   .cart_container {
     flex-direction: column; /* Cambiar a diseño vertical */
     gap: 20px; /* Espaciado entre las secciones */
