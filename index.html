@@ -22,6 +22,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- Estilo responsivo -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="sub_page">
@@ -247,6 +249,18 @@
       </div>
     </div>
   </section>
+
+  <section style="margin-top: 30px;">
+    <div class="heading_container heading_center">
+      <h1>Estadísticas</h1>
+    </div>
+  </section>
+  
+  
+  <div class="graphic-seccion">
+    <canvas id="myChart" width="400" height="200"></canvas>
+</div>
+
   <!-- Fin Categorías -->
 
   <!-- footer section -->
@@ -311,7 +325,6 @@
 
             <a href="Ayuda.html"><p>Preguntas Frecuentes</p></a>
             <a href="Acerca_de.html"><p>Acerca De</p></a>
-            <a href="images/Maquetado Página de Inicio.png" target="_blank"><p>Maquetado Página Inicio</p></a>
          </div>  
         </div>
         
@@ -335,6 +348,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+
+  <script src="js/grafico.js"></script>
+
 </body>
 
 </html>

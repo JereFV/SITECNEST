@@ -1127,3 +1127,19 @@ nav .cart svg:hover{
   font-weight: bold;
   margin-top: 10px;
 }
+
+.graphic-seccion{
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 70%;
+}
+
+
+.graphic-seccion canvas {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
